@@ -1,7 +1,5 @@
 //https://leetcode.com/problems/concatenation-of-array/description/
 
-import java.util.Arrays;
-
 class Solution {
     public static int[] getConcatenation(int[] nums) {
         int[] con = new int[2 * nums.length];
@@ -11,9 +9,5 @@ class Solution {
             con[i+n]=nums[i];
         }
         return con;
-    }
-    public static void main(String[] args){
-        int[] arr={1,2,1};
-        System.out.println(Arrays.toString(getConcatenation(arr)));
     }
 }
